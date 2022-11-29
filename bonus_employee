@@ -1,26 +1,18 @@
 #A company decided to give bonus of 5% to employee if his/her year of service is more than 5 years.
 #Ask user for their salary and year of service and print the net bonus amount.
 
-#versione da controllare
-
-def employer(salary,service):
-    print("enter salary")
-    salary = int(input())
-    if salary > 5 :
-        print("enter service")
-        service = int(input())
-        print((service) * 1.05 )
+def deserves_bonus():
+    print("enter year of service")
+    service = int(input())
+    if service > 5 :
+        print("enter your salary")
+        salary = int(input())
+        bonus = (salary * 1.05) - salary
+        print(f"Your bonus is {bonus}")
     else:
-        print('no')
+        print("You dont'deserve a bonus")
 
-employer(salary=6,service= 9)
 
-#versione normale senza voler fare il fenomeno
+deserves_bonus()
 
-time = (int(input("enter time" )))
 
-if time > 5 :
-    salary = (int(input("enter salary")))
-    print((salary) * 1.05)
-else:
-    print("not enoght time")
