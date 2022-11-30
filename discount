@@ -9,7 +9,7 @@ def discount():
     total_price = quantity * 100
 
     if total_price > 1000:
-         discount = (total_price*10) /100 
+         discount = discount = total_price*.1 
          final_price = total_price - discount
          print(f"Price is:{final_price}, you saved {discount}")
    
