@@ -6,11 +6,13 @@ If a year is divisible by 4 then it is leap year but if the year is century year
 
 def leap_year():
 
-    enter_year = int(input("Enter year:"))
+    year = int(input("Enter year:"))
 
-    if enter_year % 4==0 and enter_year%400 == 0 :
+    if year %4==0:
         print("Is leap")
     
+    elif year %400 == 0:
+        print("Is leaaap")
+
     else :
         print("Not Leap")
-
