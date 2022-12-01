@@ -12,9 +12,6 @@ def leap():
 
     elif year%4 ==0 and year%400 ==0:
         print("Leap1")
-        
-    elif year%4 ==0 and year%400 !=0:
-        print("Leap2")
 
     else:
         print("Not leap")
