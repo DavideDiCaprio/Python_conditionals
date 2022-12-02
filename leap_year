@@ -7,11 +7,14 @@ def leap():
 
     year = int(input("Enter year:"))
 
-    if year%4==0 and year%400 !=0:
+    if year%4 ==0 and year%100 !=0 and year%400 !=0:
         print("Leap")
 
-    elif year%4 ==0 and year%400 ==0:
-        print("Leap1")
+    elif year%4==0 and year%100== 0 and year%400 !=0:
+        print("No leap century")
 
-    else:
+    elif year%4 ==0 and year%100==0 and year%400 ==0:
+        print("Leap century")
+
+    else :
         print("Not leap")
