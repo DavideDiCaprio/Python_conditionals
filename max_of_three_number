@@ -1,0 +1,14 @@
+#max of three number
+
+def max_three_numbers():
+
+    n1,n2,n3= int(input("Number 1:")),int(input("Number 2:")),int(input("Number 3:"))
+
+    if n1>n2 and n1>n3:
+        print(f"{n1} is greater")
+    
+    if n2>n1 and n2>n3:
+        print(f"{n2} is greater")
+
+    if n3>n1 and n3>n2:
+        print(f"{n3} is greater")
