@@ -12,3 +12,6 @@ def max_three_numbers():
 
     if n3>n1 and n3>n2:
         print(f"{n3} is greater")
+    
+    else :
+        print("All the same")
