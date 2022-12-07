@@ -1,0 +1,14 @@
+#Given three sides, check whether triangle is valid or not. 
+#A triangle is valid if the sum of any two sides is greater than the third one.
+
+def is_valid_triangle():
+    
+    a = int(input("Enter agnle A: "))
+    b = int(input("Enter angle B: "))
+    c = int(input("Enter angle C: "))
+
+
+    if  a+b > c and a+c > b and  b+c > a :
+        return True
+
+    return False
